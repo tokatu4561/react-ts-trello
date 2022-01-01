@@ -1,4 +1,5 @@
 import React, { FormEvent } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 type Props = {
   inputText: string;
@@ -16,10 +17,13 @@ export const AddTaskInput = (props: Props) => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     //カードを追加する
+    if (inputText === "") return;
+    const taskId = uuidv4();
     setTaskList([
       ...taskList,
       {
-        id: taskList.length,
+        id: taskId,
+        draggableId: `task-${taskId}`,
         text: inputText,
       },
     ]);

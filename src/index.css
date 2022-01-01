@@ -19,7 +19,8 @@ header {
 
 .app {
   background-color: rgb(236, 211, 173);
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .taskCard {
@@ -71,4 +72,5 @@ header {
 .taskTrashButton {
   margin-right: 9px;
   border: none;
+  cursor: pointer;
 }
