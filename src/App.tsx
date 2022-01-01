@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Header } from "./components/Header";
-import { TaskCard } from "./components/TaskCard";
+import { TaskCards } from "./components/TaskCards";
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <TaskCard />
+      <TaskCards />
     </div>
   );
 }

@@ -10,7 +10,6 @@ export const TaskCard = () => {
   return (
     <div className="taskCard">
       <TaskCardTitle />
-      <AddTaskCardButton />
       <AddTaskInput
         inputText={inputText}
         setInputText={setInputText}
