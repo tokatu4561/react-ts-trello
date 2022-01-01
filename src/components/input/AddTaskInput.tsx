@@ -1,10 +1,11 @@
 import React, { FormEvent } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { TaskType } from "../../types/Task";
 
 type Props = {
   inputText: string;
   setInputText: any;
-  taskList: [];
+  taskList: TaskType[];
   setTaskList: any;
 };
 

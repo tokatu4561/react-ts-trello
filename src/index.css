@@ -101,3 +101,16 @@ header {
   box-shadow: none;
   transform: translate(3px, 3px);
 }
+
+.flex-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskCardDeleteBtn {
+  border: none;
+  background-color: rgb(288, 228, 210);
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
